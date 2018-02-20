@@ -17,6 +17,8 @@ package com.example.android.datafrominternet;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -52,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
     // TODO (8) Override onCreateOptionsMenu
     // TODO (9) Within onCreateOptionsMenu, use getMenuInflater().inflate to inflate the menu
     // TODO (10) Return true to display your menu
+    public boolean onCreateOPtionMenu(Menu menu){
+        MenuInflater inflater=getMenuInflater();
+        inflater.inflate(R.id.action_search);
+        return true;
+
+    }
 
     // TODO (11) Override onOptionsItemSelected
     // TODO (12) Within onOptionsItemSelected, get the ID of the item that was selected
